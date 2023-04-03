@@ -13,7 +13,7 @@ def grade(score):
 
 #이렇게도 풀 수 있음
 def gradeAnotherSolution(score):
-    if 0<=score<=100:
+    if 0<=score<=100: #입력값이 0~100이라는 보장이 없음!
         return "FFFFFFDCBAA"[score//10]
     return "F"
 
