@@ -2,7 +2,7 @@
 def grade(score):
     if 90<=score<=100:
         return "A"
-    elif 80<=score<90:
+    elif 80<=score<90: #입력값이 0~100이라는 보장이 없음!
         return "B"
     elif 70<=score<80:
         return "C"
