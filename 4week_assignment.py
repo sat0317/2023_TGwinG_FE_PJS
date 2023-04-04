@@ -21,18 +21,16 @@ def double(lst):
 
     return cnt
 
-# 2번
-def nCr(n, r):
-    if n == r:
-        return 1
-    if r == 0:
-        return 1
-    return nCr(n-1, r-1) + nCr(n-1, r)
-    
+# 2번    
 def pascal(n):
     ans = []
-    for r in range(0, n):
-        ans.append(nCr(n-1, r))
+    for r in range(n):
+        nCr = 1
+        for _ in range(1, r+1):
+            nCr *= n-_
+        for _ in range(1, r+1):
+            nCr //= _
+        ans.append(nCr)
     return ans
 
 # 3번
